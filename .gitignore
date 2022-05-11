@@ -1,0 +1,4 @@
+.idea/
+migrations/
+pg_data/
+apiserver

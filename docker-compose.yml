@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:13.2-alpine
+    ports:
+      - "0.0.0.0:5433:5432"
+    env_file:
+      - .env
+    volumes:
+      - ./pg_data:/var/lib/pg_data
+    restart: always
